@@ -1,0 +1,65 @@
+.footer {
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+  padding: 60px 5% 20px;
+   max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-col h5 {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-col a:hover {
+  color: #111827;
+}
+
+.footer-newsletter p {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 15px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.newsletter-form button {
+  padding: 10px 16px;
+  border: none;
+  background: #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6b7280;
+}

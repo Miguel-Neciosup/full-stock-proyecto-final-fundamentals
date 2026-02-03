@@ -1,0 +1,59 @@
+.hero {
+  height: 85vh; /* altura grande */
+  background-image: url("/images/imagen-fondo.jpg"); /* tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* oscuridad */
+}
+
+
+.hero-content {
+  position: relative; /* importante */
+  text-align: center;
+  color: #fff;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+
+.btn-hero {
+  display: inline-block;
+  background: #6366f1;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-hero:hover {
+  background: #4f46e5;
+}

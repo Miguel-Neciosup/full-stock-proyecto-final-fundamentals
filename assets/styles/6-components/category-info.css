@@ -1,0 +1,16 @@
+.category-info {
+  margin-bottom: 30px;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.category-info h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.category-info p {
+  font-size: 15px;
+  color: #6b7280;
+  max-width: 800px;
+}

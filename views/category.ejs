@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>category__image</title>
+    <link rel="stylesheet" href="/styles/polos.css" />
+</head>
+<body>
+
+  <header>
+        <div class="header-top">
+        <nav>
+          <a href="#">Iniciar sesión</a>
+          <a href="#" class="header-button">Crear una cuenta</a>
+        </nav>
+    </div>
+
+    <div class="header-main">
+        <a href="index.html">Full Stock</a>
+        
+
+        <ul class="header__links">
+          <li><a href="#">Polos</a></li>
+          <li><a href="#">Tazas</a></li>
+          <li><a href="#">Stickers</a></li>
+        </ul>
+
+        <img src="../images/carrito-compras.png" class="header__cart">
+    </div>
+
+  </header>
+
+  <main>
+      <section class="category-info">
+          <h1> <%=category.name%> </h1>
+          <p> <%=category.description%>  </p>
+      </section>
+      <section class="content" >
+        <aside class="filters"   action="">
+            <h3>Precio</h3>
+            <div class="price-inputs">
+              <input type="number" class="num1" placeholder="Min">
+              <input type="number" class="num2" placeholder="Max">
+            </div>
+            <button>
+              Filtrar productos
+            </button>
+
+        </aside>
+
+      <section class="products">
+
+          <% products.forEach((product) => { %>
+
+            <article class="product-card">
+              <a href="/products/<%=product.id%>">
+                <img 
+                  class=""
+                  src="<%=product.imagePath%>"
+                  alt="<%=product.imageDescription%>"
+                  >
+                <h3  class=""> <%=product.name%> </h3>     
+                <p class="">
+                  <%=product.description%>
+                </p>
+                <p>
+                    <%=product.price%>
+                </p>
+              </a>
+            </article>
+          <% }) %>
+
+        </section>
+
+      </section>
+
+  </main>
+
+        <%- include("footer") %>       
+</body>
+
+</html>
