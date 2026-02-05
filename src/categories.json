@@ -9,7 +9,7 @@
                 "id":1,
                 "name": "Polo React" ,
                 "description":"Viste tu pasión por React con estilo y comodidad en cada línea de código.",
-                "price ":2000,
+                "price":20,
                 "imagePath": "/images/polo-react.png",
                  "imageDescription" : "Polo gris con el logo de React"
             },
@@ -17,7 +17,7 @@
                 "id":2,
                 "name": "Polo JavaScript" ,
                 "description":"Deja que tu amor por JavaScript hable a través de cada hilo de este polo.",
-                "price ":2000,
+                "price":20,
                  "imagePath": "/images/polo-js.png",
                  "imageDescription" : "Polo gris con el logo de React"
             },
@@ -25,7 +25,7 @@
                 "id":3,
                 "name": "Polo Node.js" ,
                 "description":"Conéctate al estilo con este polo de Node.js, tan robusto como tu código.",
-                "price ":2000,
+                "price":20,
                  "imagePath": "/images/polo-node.png",
                  "imageDescription" : "Polo gris con el logo de React"
             },
@@ -34,7 +34,7 @@
                 "id":4,
                 "name": "Polo TypeScript" ,
                 "description":"Tipa tu estilo con precisión: lleva tu pasión por TypeScript en cada hilo.",
-                "price ":2000,
+                "price":20,
                  "imagePath": "/images/polo-typescry.png",
                  "imageDescription" : "Polo gris con el logo de React"
             },
@@ -43,15 +43,15 @@
                 "id":5,
                 "name": "Polo Backend Developer" ,
                 "description":"Domina el servidor con estilo: viste con orgullo tu título de Backend Developer.",
-                "price ":2000,
+                "price":20,
                  "imagePath": "/images/polo-backend.png",
                  "imageDescription" : "Polo gris con el logo de React"
             },
             {
-                "id":5,
+                "id":6,
                 "name": "Polo Frontend Developer" ,
                 "description":"Construye experiencias con estilo: luce con orgullo tu polo de Frontend Developer..",
-                "price ":2000,
+                "prices":20,
                  "imagePath": "/images/polo-fronted.png",
                  "imageDescription" : "Polo gris con el logo de React"
             }

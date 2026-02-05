@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito de compras</title>
+  <link rel="stylesheet" href="/styles/cart.css" />
+</head>
+
+<body>
+
+  <%- include("partials/header") %>
+    <h1 class="cart-title">Carrito de compras</h1>
+
+    <main class="cart-container">
+
+      <!-- LISTA DE PRODUCTOS -->
+      <div class="cart-list">
+
+        <% cart.forEach((product)=> { %>
+          <div class="cart-item">
+            <!-- IZQUIERDA -->
+            <div class="item-left">
+
+              <img src="<%= product.imagePath %>" alt="<%= product.imageDescription %>" class="item-image">
+
+              <div class="item-details">
+                <p class="item-name">
+                  <%= product.name %>
+                </p>
+                <p class="item-price">$ <%=product.price %>
+                </p>
+              </div>
+
+            </div>
+            <!-- DERECHA -->
+            <div class="item-right">
+
+              <!-- ELIMINAR -->
+              <button class="delete-btn">
+                🗑️
+              </button>
+
+              <!-- CANTIDAD -->
+              <div class="quantity-control">
+                <button class="qty-btn">−</button>
+                <span class="qty-number">1</span>
+                <button class="qty-btn">+</button>
+              </div>
+
+            </div>
+
+          </div>
+          <% }) %>
+      </div>
+      <!-- TOTAL -->
+      <div class="cart-total">
+        <p>Total</p>
+        <p><%=total%></p>
+      </div>
+      <!-- BOTON -->
+      <div class="cart-actions">
+        <button class="checkout-btn">
+          Continuar Compra
+        </button>
+      </div>
+    </main>
+    <%- include("partials/footer") %>
+</body>
+</html>

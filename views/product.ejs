@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT</title>
+    <link rel="stylesheet" href="/styles/product.css" />
+</head>
+<body>
+    
+    <%- include("partials/header") %>
+    
+    <main class="product">
+    <aside class="product-image">
+      <img src="<%=product.imagePath%>" alt="<%= product.imageDescription%>">
+    </aside>
+    
+    <section class="product-info">
+      <h1><%=product.name%></h1>
+      <p class="price"><%=product.price%></p>
+    
+      <p class="description">
+         <%= product.description%>
+      </p>
+       
+      <form action="/cart/add/<%=product.id%>" method="post"> 
+      <button type="submit" class="btn-cart">
+          Agregar al Carrito
+      </button>
+      </form>
+    
+      <section class="features">
+          <h2>Características</h2>
+          <ul>
+              <li>Estampado resistente que mantiene sus colores vibrantes lavado tras lavado.</li>
+              <li>Hecho de algodón suave que asegura comodidad y frescura.</li>
+              <li>Costuras reforzadas para una mayor durabilidad.</li>
+              <li>Corte moderno que se adapta perfectamente al cuerpo.</li>
+          </ul>
+      </section>
+    </section>
+    </main>
+    
+    <%- include("partials/footer") %>
+
+
+
+</body>
+
+
+
+</html>
