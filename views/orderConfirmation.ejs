@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orden - Confirmation</title>
+    <link rel="stylesheet" href="/styles/orderConfirmation.css">
+
+</head>
+<body>
+
+
+    <%- include("partials/header") %>
+
+    <main class="success-container">
+    <div class="success-content">
+        <p class="thanks-text">¡Muchas gracias por tu compra!</p>
+        <h1 class="main-title">Tu orden está en camino</h1>
+        <p class="subtitle">Llegaremos a la puerta de tu domicilio lo antes posible</p>
+
+        <div class="order-info">
+            <p class="order-label">Número de orden</p>
+             <p class="order-number"><%= orderId %></p> 
+             
+        </div>
+        
+        <a href="/" class="btn-back">Volver a la tienda</a>
+    </div>
+</main>
+
+
+
+
+     <%- include("partials/footer") %>
+    
+</body>
+</html>

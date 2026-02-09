@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1770676258333,
+    "fecha": "9/2/2026, 17:30:58",
+    "cliente": {
+      "nombre": "MIGUEL ANGEL",
+      "apellido": "NECIOSUP VELASQUEZ",
+      "email": "MIGUELANGELNECIOSUPVELASQUEZ@GMAIL.COM",
+      "telefono": "970404729",
+      "direccion": "CALLE LIMA 372, ETEN, Perú"
+    },
+    "items": [
+      {
+        "id": 2,
+        "name": "Polo JavaScript",
+        "description": "Deja que tu amor por JavaScript hable a través de cada hilo de este polo.",
+        "price": 20,
+        "imagePath": "/images/polo-js.png",
+        "imageDescription": "Polo gris con el logo de React"
+      },
+      {
+        "id": 1,
+        "name": "Polo React",
+        "description": "Viste tu pasión por React con estilo y comodidad en cada línea de código.",
+        "price": 20,
+        "imagePath": "/images/polo-react.png",
+        "imageDescription": "Polo gris con el logo de React"
+      }
+    ],
+    "total": 40
+  }
+]

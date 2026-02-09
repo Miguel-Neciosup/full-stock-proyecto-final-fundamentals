@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/checkout.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <%- include("partials/header") %>
+
+        <main class="checkout-container">
+            <section class="checkout-form-section">
+                <form action="/orderConfirmation" method="POST">
+
+                    <div class="form-group">
+                        <h3>Información de contacto</h3>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <h3>Información de envío</h3>
+
+                        <div class="form-row">
+                            <div class="input-half">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="input-half">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" id="apellido" name="apellido" required>
+                            </div>
+                        </div>
+
+                        <label for="compania">Compañía</label>
+                        <input type="text" id="compania" name="compania">
+
+                        <label for="direccion">Dirección</label>
+                        <input type="text" id="direccion" name="direccion" required>
+
+                        <div class="form-row">
+                            <div class="input-half">
+                                <label for="ciudad">Ciudad</label>
+                                <input type="text" id="ciudad" name="ciudad" required>
+                            </div>
+                            <div class="input-half">
+                                <label for="pais">País</label>
+                                <input type="text" id="pais" name="pais" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-half">
+                                <label for="provincia">Provincia/Estado</label>
+                                <input type="text" id="provincia" name="provincia">
+                            </div>
+                            <div class="input-half">
+                                <label for="codigo-postal">Código postal</label>
+                                <input type="text" id="codigo-postal" name="codigo_postal" required>
+                            </div>
+                        </div>
+
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+
+                    <button type="submit" class="btn-confirmar">Confirmar Orden</button>
+                </form>
+            </section>
+
+            <aside class="order-summary">
+                <h3>Resumen de la orden</h3>
+
+                <div class="cart-list">
+
+                    <% checkout.forEach((product)=> { %>
+                        <div class="cart-item">
+                            <!-- IZQUIERDA -->
+                            <div class="item-left">
+                                <img src="<%= product.imagePath %>" alt="<%= product.imageDescription %>"
+                                    class="item-image">
+                                <div class="item-details">
+                                    <p class="item-name">
+                                        <%= product.name %>
+                                    </p>
+                                    <p class="item-price">$ <%=product.price %>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <% }) %>
+                </div>
+
+                <div class="cart-total">
+                    <p>Total</p>
+                    <p>
+                        <%=total%>
+                    </p>
+                </div>
+
+
+            </aside>
+        </main>
+
+        <%- include("partials/footer") %>
+
+
+</body>
+
+</html>

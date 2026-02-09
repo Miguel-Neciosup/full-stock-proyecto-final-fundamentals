@@ -63,13 +63,116 @@
         "name": "Tazas",
         "description": "Tazas que combinan perfectamente con tu café matutino y tu pasión por la programación. ¡Empieza el día con estilo!",
         "imagePath" : "/images/categoria-tazas.png",
-        "products": []
+        "products": [
+
+            {
+                "id":1,
+                "name": "Taza JavaScripts" ,
+                "description":"Viste tu pasión por React con estilo y comodidad en cada línea de código.",
+                "price":20,
+                "imagePath": "/images/taza-js.png",
+                 "imageDescription" : "Polo gris con el logo de React"
+            },
+            {
+                "id":2,
+                "name": "Taza React" ,
+                "description":"Deja que tu amor por JavaScript hable a través de cada hilo de este polo.",
+                "price":20,
+                 "imagePath": "/images/taza-react.png",
+                 "imageDescription" : "Polo gris con el logo de React"
+            },
+            {
+                "id":3,
+                "name": "Taza case of fire" ,
+                "description":"Conéctate al estilo con este polo de Node.js, tan robusto como tu código.",
+                "price":20,
+                 "imagePath": "/images/taza-negra.png",
+                 "imageDescription" : "Polo gris con el logo de React"
+            },
+
+            {
+                "id":4,
+                "name": "Polo sql" ,
+                "description":"Tipa tu estilo con precisión: lleva tu pasión por TypeScript en cada hilo.",
+                "price":20,
+                 "imagePath": "/images/taza-sql.png",
+                 "imageDescription" : "Polo gris con el logo de React"
+            },
+
+            {
+                "id":5,
+                "name": "taza linux" ,
+                "description":"Domina el servidor con estilo: viste con orgullo tu título de Backend Developer.",
+                "price":20,
+                 "imagePath": "/images/taza-linux.png",
+                 "imageDescription" : "Polo gris con el logo de React"
+            },
+            {
+                "id":6,
+                "name": "Taza blanca" ,
+                "description":"Construye experiencias con estilo: luce con orgullo tu polo de Frontend Developer..",
+                "prices":20,
+                 "imagePath": "/images/taza-miau.png",
+                 "imageDescription" : "Polo gris con el logo de React"
+            }
+        ]
     },
     {
         "id": 3,
         "name": "Stickers",
         "description": "Personaliza tu espacio de trabajo con nuestros stickers únicos y muestra tu amor por el desarrollo web.",
         "imagePath" : "/images/categoria-stickers.png",
-        "products": []
+        "products": [
+            {
+                "id":1,
+                "name": "Sticker JavaScripts" ,
+                "description":"Viste tu pasión por React con estilo y comodidad en cada línea de código.",
+                "price":20,
+                "imagePath": "/images/sticker-js.png",
+                 "imageDescription" : "Polo gris con el logo de React"
+            },
+            {
+                "id":2,
+                "name": "Sticker docker" ,
+                "description":"Deja que tu amor por JavaScript hable a través de cada hilo de este polo.",
+                "price":20,
+                 "imagePath": "/images/sticker-docker.png",
+                 "imageDescription" : "Polo gris con el logo de React"
+            },
+            {
+                "id":3,
+                "name": "Sticker git" ,
+                "description":"Conéctate al estilo con este polo de Node.js, tan robusto como tu código.",
+                "price":20,
+                 "imagePath": "/images/sticker-git.png",
+                 "imageDescription" : "Polo gris con el logo de React"
+            },
+
+            {
+                "id":4,
+                "name": "sticker Github" ,
+                "description":"Tipa tu estilo con precisión: lleva tu pasión por TypeScript en cada hilo.",
+                "price":20,
+                 "imagePath": "/images/sticker-github.png",
+                 "imageDescription" : "Polo gris con el logo de React"
+            },
+
+            {
+                "id":5,
+                "name": "sticker html" ,
+                "description":"Domina el servidor con estilo: viste con orgullo tu título de Backend Developer.",
+                "price":20,
+                 "imagePath": "/images/sticker-html.png",
+                 "imageDescription" : "Polo gris con el logo de React"
+            },
+            {
+                "id":6,
+                "name": "sticker linux" ,
+                "description":"Construye experiencias con estilo: luce con orgullo tu polo de Frontend Developer..",
+                "prices":20,
+                 "imagePath": "/images/sticker-linux.png",
+                 "imageDescription" : "Polo gris con el logo de React"
+            }
+        ]
     }
 ]

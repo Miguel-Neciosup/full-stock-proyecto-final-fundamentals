@@ -1,0 +1,52 @@
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* Centra el contenido verticalmente */
+    text-align: left;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+}
+
+.success-content {
+    max-width: 600px;
+    width: 100%;
+}
+
+.thanks-text {
+    color: #5c5be5; /* El color azul de tu marca */
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin: 0 0 15px 0;
+    line-height: 1.1;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.order-info {
+    margin-top: 30px;
+}
+
+.order-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.order-number {
+    font-size: 1.1rem;
+    color: #5c5be5;
+    font-weight: 500;
+}
