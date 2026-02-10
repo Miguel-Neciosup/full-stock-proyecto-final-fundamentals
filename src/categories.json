@@ -51,7 +51,7 @@
                 "id":6,
                 "name": "Polo Frontend Developer" ,
                 "description":"Construye experiencias con estilo: luce con orgullo tu polo de Frontend Developer..",
-                "prices":20,
+                "price":20,
                  "imagePath": "/images/polo-fronted.png",
                  "imageDescription" : "Polo gris con el logo de React"
             }
@@ -68,7 +68,7 @@
             {
                 "id":1,
                 "name": "Taza JavaScripts" ,
-                "description":"Viste tu pasión por React con estilo y comodidad en cada línea de código.",
+                "description":"Tasas de buenas calidad con JavaScripts",
                 "price":20,
                 "imagePath": "/images/taza-js.png",
                  "imageDescription" : "Polo gris con el logo de React"
@@ -111,7 +111,7 @@
                 "id":6,
                 "name": "Taza blanca" ,
                 "description":"Construye experiencias con estilo: luce con orgullo tu polo de Frontend Developer..",
-                "prices":20,
+                "price":20,
                  "imagePath": "/images/taza-miau.png",
                  "imageDescription" : "Polo gris con el logo de React"
             }
@@ -169,7 +169,7 @@
                 "id":6,
                 "name": "sticker linux" ,
                 "description":"Construye experiencias con estilo: luce con orgullo tu polo de Frontend Developer..",
-                "prices":20,
+                "price":20,
                  "imagePath": "/images/sticker-linux.png",
                  "imageDescription" : "Polo gris con el logo de React"
             }

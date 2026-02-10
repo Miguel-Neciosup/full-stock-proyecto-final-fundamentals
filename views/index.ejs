@@ -7,10 +7,7 @@
       <title>Index</title>
     </head>
     <body>
-      
-
         <%- include("partials/header") %>
-
     <main>
 
         <section class="hero">
@@ -20,15 +17,12 @@
               Un pequeño lote de increíbles productos acaba de llegar.
               Agrega tus favoritos al carrito antes que se agoten.
             </p>
-            <a href="#" class="btn-hero">Compra ahora</a>
-            
+            <a href="categories/1" class="btn-hero">Compra ahora</a>
           </div>
         </section>
-
         <!-- BEM: Bloque, Elementos, Modificador -->
         <section class="categories container">
           <div class="categories__intro">
-
             <h2 class="categories__title">Compra por categoría</h2>
             <p class="categories__description">
               Explora nuestra selección de productos especialmente diseñados para
@@ -36,11 +30,8 @@
               categorías de polos, tazas, stickers y más.
             </p>
           </div>
-
           <div class="categories__content">
-
             <% categories.forEach((category) => { %>
-
                 <div class="category">
                   <a href="/categories/<%=category.id%>">
                     <img
@@ -59,6 +50,7 @@
                 </div>
             <% }) %>
           </div>
+ 
         </section>
 
         <section class="features">

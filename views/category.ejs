@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>category__image</title>
+    <title>category__tazas</title>
     <link rel="stylesheet" href="/styles/polos.css" />
 </head>
 <body>
@@ -33,7 +33,7 @@
           <% products.forEach((product) => { %>
 
             <article class="product-card">
-              <a href="/products/<%=product.id%>">
+              <a href="/categories/<%= category.id %>/products/<%= product.id %>">
                 <img 
                   class=""
                   src="<%=product.imagePath%>"

@@ -13,33 +13,44 @@ export async function categoryHandler(req, res) {
   const category = categories.find((c) => c.id === categoryId);
   res.render("category", { category: category, products:category.products });
 }
-export async function productHandler(req, res) {
-  const categories = await getCategories();
-  const productId = Number(req.params.id);
-  let product = null;
- for ( const category of categories){
 
-  product = category.products.find((p) =>p.id ===
-  productId);
-  if(product) break;
- }
- res.render("product", { product})
+export async function productHandler(req, res) {
+    const categories = await getCategories();
+    
+    const categoryId = Number(req.params.categoryId); 
+    const productId = Number(req.params.productId);
+
+
+    const category = categories.find(c => c.id === categoryId);
+    const product = category ? category.products.find(p => p.id === productId) : null;
+
+    if (!product) {
+        return res.status(404).send("Producto no encontrado");
+    }
+
+    res.render("product", { product , categoryId: categoryId});
 }
+
 export async function addProductHandler(req, res) {
   const cart = await  GetCart();
   const categories = await getCategories();
-  const productId = Number(req.params.id);
-    let product = null;
- for ( const category of categories){
 
-  product = category.products.find((p) =>p.id ===
-  productId);
-  if(product) break;
- }
- cart.push(product);
- saveCart(cart);
- res.redirect(303,"/cart"); 
+    const categoryId = Number(req.params.categoryId);
+    const productId = Number(req.params.productId);
+  // Buscamos dentro de categoria
+  const category = categories.find(c => c.id === categoryId);
 
+  // Buscamos el producto dentro de la categoria especifica
+  const product = category ? category.products.find(p => p.id === productId) : null;
+
+  if (product) {
+    cart.push(product);
+    await saveCart(cart); 
+  }else {
+        console.log("No se pudo encontrar el producto con IDs:", categoryId, productId);
+    }
+  
+  res.redirect(303, "/cart");
 }
 export async function cartHandler(_req, res) {
   const cart = await GetCart();
@@ -89,4 +100,13 @@ export async function orderHandler(req, res) {
 }
 export async function  aboutHandler(req, res) {
   res.render("about");
+}
+export async function loginHandler(req, res) {
+  const categories = await getCategories();
+  res.render("login", {categories :categories});
+}
+
+export async function signupHandler(req, res) {
+  const categories = await getCategories();
+  res.render("signup", {categories :categories});
 }

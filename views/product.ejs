@@ -23,7 +23,7 @@
          <%= product.description%>
       </p>
        
-      <form action="/cart/add/<%=product.id%>" method="post"> 
+      <form action="/cart/add/<%=categoryId %>/<%=product.id %>" method="post"> 
       <button type="submit" class="btn-cart">
           Agregar al Carrito
       </button>

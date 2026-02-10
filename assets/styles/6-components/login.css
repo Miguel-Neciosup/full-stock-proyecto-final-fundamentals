@@ -1,0 +1,87 @@
+.login-container {
+    max-width: 450px;
+    margin: 80px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input {
+    padding: 14px 18px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px; 
+    font-size: 15px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #6366f1; 
+}
+
+
+.btn-primary {
+    background-color: #5d5fef;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #4a4cd9;
+}
+
+/* Footer: ¿Aún no tienes cuenta? */
+.form-footer {
+    margin-top: 40px;
+    font-size: 15px;
+    color: #666;
+}
+
+.form-footer span {
+    margin-right: 8px;
+}
+
+.form-footer a {
+    color: #5d5fef;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}

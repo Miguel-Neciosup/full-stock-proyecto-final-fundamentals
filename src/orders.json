@@ -1,7 +1,7 @@
 [
   {
-    "id": 1770676258333,
-    "fecha": "9/2/2026, 17:30:58",
+    "id": 1770743170080,
+    "fecha": "10/2/2026, 12:06:10",
     "cliente": {
       "nombre": "MIGUEL ANGEL",
       "apellido": "NECIOSUP VELASQUEZ",
@@ -11,6 +11,14 @@
     },
     "items": [
       {
+        "id": 1,
+        "name": "Polo React",
+        "description": "Viste tu pasión por React con estilo y comodidad en cada línea de código.",
+        "price": 20,
+        "imagePath": "/images/polo-react.png",
+        "imageDescription": "Polo gris con el logo de React"
+      },
+      {
         "id": 2,
         "name": "Polo JavaScript",
         "description": "Deja que tu amor por JavaScript hable a través de cada hilo de este polo.",
@@ -19,14 +27,22 @@
         "imageDescription": "Polo gris con el logo de React"
       },
       {
+        "id": 2,
+        "name": "Taza React",
+        "description": "Deja que tu amor por JavaScript hable a través de cada hilo de este polo.",
+        "price": 20,
+        "imagePath": "/images/taza-react.png",
+        "imageDescription": "Polo gris con el logo de React"
+      },
+      {
         "id": 1,
-        "name": "Polo React",
+        "name": "Sticker JavaScripts",
         "description": "Viste tu pasión por React con estilo y comodidad en cada línea de código.",
         "price": 20,
-        "imagePath": "/images/polo-react.png",
+        "imagePath": "/images/sticker-js.png",
         "imageDescription": "Polo gris con el logo de React"
       }
     ],
-    "total": 40
+    "total": 80
   }
 ]

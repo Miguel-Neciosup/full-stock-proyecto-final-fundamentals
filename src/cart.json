@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "id": 1,
+    "name": "Polo React",
+    "description": "Viste tu pasión por React con estilo y comodidad en cada línea de código.",
+    "price": 20,
+    "imagePath": "/images/polo-react.png",
+    "imageDescription": "Polo gris con el logo de React"
+  },
+  {
+    "id": 6,
+    "name": "sticker linux",
+    "description": "Construye experiencias con estilo: luce con orgullo tu polo de Frontend Developer..",
+    "price": 20,
+    "imagePath": "/images/sticker-linux.png",
+    "imageDescription": "Polo gris con el logo de React"
+  },
+  {
+    "id": 5,
+    "name": "taza linux",
+    "description": "Domina el servidor con estilo: viste con orgullo tu título de Backend Developer.",
+    "price": 20,
+    "imagePath": "/images/taza-linux.png",
+    "imageDescription": "Polo gris con el logo de React"
+  },
+  {
+    "id": 6,
+    "name": "sticker linux",
+    "description": "Construye experiencias con estilo: luce con orgullo tu polo de Frontend Developer..",
+    "price": 20,
+    "imagePath": "/images/sticker-linux.png",
+    "imageDescription": "Polo gris con el logo de React"
+  }
+]
